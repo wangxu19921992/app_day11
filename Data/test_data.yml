@@ -1,0 +1,42 @@
+Test_Login_Data:
+  test_login_001:
+    username: "13488834010"
+    passwd: "159357li"
+    expect: "我的优惠券"
+  test_login_002:
+    username: " 13488834010"
+    passwd: "159357li"
+    expect: "我的优惠券"
+  test_login_003:
+    username: "13488834010 "
+    passwd: "159357li"
+    expect: "我的优惠券"
+  test_login_006:
+    username: "mlili"
+    passwd: "159357li"
+    expect: "我的优惠券"
+  test_login_007:
+    username: " mlili"
+    passwd: "159357li"
+    expect: "我的优惠券"
+  test_login_008:
+    username: "mlili "
+    passwd: "159357li"
+    expect: "我的优惠券"
+
+  test_login_011:
+    username: "13488834010"
+    passwd: "159357"
+    toast_mes: "错误"
+    expect: "登录密码错误"
+  test_login_015:
+    username: "mlili"
+    passwd: "159357"
+    toast_mes: "错误"
+    expect: "登录密码错误"
+  test_login_019:
+    username: "17700008888"
+    passwd: "159357"
+    toast_mes: "不存在"
+    expect: "此用户不存在"
+
